@@ -18,9 +18,9 @@ module.exports = {
       // GIT remote/branch
       ref: "origin/master",
       // GIT remote
-      repo: "https://github.com/danielkhan/voting-service-green.git",
+      repo: "https://github.com/danielkhan/voting-service-blue.git",
       // path in the server
-      path: "/home/deploy/apps/voting-service-gateway",
+      path: "/home/deploy/apps/voting-service-blue",
       // Pre-setup command or path to a script on your local machine
       // pre-setup: "apt-get install git ; ls -la",
       // Post-setup commands or path to a script on the host machine^
