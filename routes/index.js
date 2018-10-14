@@ -3,7 +3,7 @@ const router = express.Router();
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
-  return res.status(500);
+  return res.status(500).end();
   // res.render('index', { title: 'Green' });
 });
 
