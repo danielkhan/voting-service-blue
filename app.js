@@ -4,13 +4,10 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/demo-votes');
+mongoose.connect('mongodb://localhost:27017/votings');
 const indexRouter = require('./routes/index');
 
 const app = express();
-
-
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
