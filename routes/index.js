@@ -13,7 +13,7 @@ router.get('/', async (req, res, next) => {
 
     const spaces = await VoteModel.count({ choice: 'spaces' }).exec();
     const tabs = await VoteModel.count({ choice: 'tabs' }).exec();
-    // return res.status(500).end();
+    return res.status(500).end();
     return res.json({ spaces, tabs });
   } catch(err) {
     console.log(err);
