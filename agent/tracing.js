@@ -1,4 +1,5 @@
 "use strict";
+const _serviceName = "service-blue";
 
 const opentelemetry = require("@opentelemetry/api");
 const { NodeTracerProvider } = require("@opentelemetry/node");
@@ -10,10 +11,8 @@ const {
 // To test export to jaeger
 const { JaegerExporter } = require("@opentelemetry/exporter-jaeger");
 
-let _serviceName = "";
-
 const provider = new NodeTracerProvider();
-_serviceName = "service-green";
+
 provider.addSpanProcessor(new SimpleSpanProcessor(new ConsoleSpanExporter()));
 
 // Enable jaeger exporter
